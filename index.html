@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>List of Endangered Animals</title>
+    <script src="js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+  </head>
+  <body>
+    <h1>List of Endangered Animals</h1>
+
+    <div class="form-wrap">
+      <h2>Add an animal:</h2>
+      <form id="new-item-form">
+        <div class="form-item">
+          <label for="species">Species:</label> <!--for and id need to match-->
+          <input type="text" id="species">
+        </div>
+
+        <div class="form-item">
+          <label>Diet:</label>
+          <input type="radio" name="diet" id="carnivore" value="Carnivore">
+          <label for="carnivore">Carnivore</label>
+          <input type="radio" name="diet" id="herbivore" value="Herbivore">
+          <label for="herbivore">Herbivore</label>
+          <input type="radio" name="diet" id="omnivore" value="Omivore">
+          <label for="omnivore">Omnivore</label>
+        </div>
+
+        <div class="form-item">
+          <label for="contintent">Continent:</label>
+          <select id="continent">
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Europe">Europe</option>
+            <option value="Africa">Africa</option>
+            <option value="Asia">Asia</option>
+            <option value="Oceania">Oceania</option>
+            <option value="Antarctica">Antarctica</option>
+          </select>
+        </div>
+
+        <div class="submit">
+          <input type="submit" value="Save"/>
+        </div>
+      </form>
+    <button type="button" id="delete-button">Delete</button>
+
+    </div>
+      <h2>Your List:</h2>
+        <div class="animal-list">
+
+        </div>
+  </body>
+</html>
